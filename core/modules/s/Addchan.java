@@ -93,7 +93,7 @@ public class Addchan implements Command
 	{
 		if(operator)
 		{
-			C.cmd_notice(numeric, botnum, username, "ADDCHAN             Makes the bot join a channel. - level 100");
+			C.cmd_notice(numeric, botnum, username, "ADDCHAN             Makes the bot join a channel.");
 		}
 	}
 }

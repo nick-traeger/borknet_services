@@ -730,7 +730,7 @@ public class CoreServer
    String ipv4 = C.longToIp(C.base64Decode(user.getIp()));
    if(!reportignore.contains(ipv4))
    {
-    C.report("User: [" + user.getNick() + "] ["+user.getHost()+"] has quit ["+message+"]");
+    C.report("User: [" + user.getNick() + "] ["+user.getIdent()+"@"+user.getHost()+"] has quit ["+message+"]");
    }
 		}
 		//remove the disconnected user and deauth him

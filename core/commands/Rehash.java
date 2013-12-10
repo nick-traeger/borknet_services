@@ -70,6 +70,6 @@ public class Rehash implements Cmds
 	}
 	public void showcommand(Core C, String bot, String username)
 	{
-		C.cmd_notice(bot, username, "REHASH              Rehashes a module. - level 999.");
+		C.cmd_notice(bot, username, "REHASH              Rehashes a module.");
 	}
 }
