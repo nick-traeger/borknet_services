@@ -3,8 +3,8 @@ rem
 rem Used for compiling on windows.
 rem 
 
-rem set CLASSPATH=F:\Work;
-set CLASSPATH=D:\Java;
+ set CLASSPATH=F:\Work;
+rem set CLASSPATH=D:\Java;
 
  javac -target 1.6 -source 1.6 *.java
  javac -target 1.6 -source 1.6 core/*.java

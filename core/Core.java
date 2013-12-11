@@ -1219,6 +1219,20 @@ public class Core
 	{
 		return ((i >> 24 ) & 0xFF) + "." + ((i >> 16 ) & 0xFF) + "." + ((i >> 8 ) & 0xFF) + "." + (i & 0xFF);
 	}
+ 
+ public String longToHost(long ip)
+ {
+  String dotIp = longToIp(ip);
+  try
+  {
+   InetAddress ia = InetAddress.getByName(dotIp);
+   return ia.getCanonicalHostName();
+  }
+  catch(Exception ex)
+  {
+   return dotIp;
+  }
+ }
 
 	public void cmd_EB()
 	{

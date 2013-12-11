@@ -140,7 +140,7 @@ public class Server
      try
      {
       long realip = Long.parseLong(ident.substring(1),16);
-      setHost(numeric, Bot.get_qident(), C.longToIp(realip));
+      setHost(numeric, Bot.get_qident(), C.longToHost(realip));
      }
      catch(Exception longex)
      {
