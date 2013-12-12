@@ -252,7 +252,7 @@ public class DBControl
 
 	public void delChan(String chan)
 	{
-  executeUpdate("DELETE FROM s_channels WHERE name = ? LIMIT 1", new String[] {chan});
+  executeUpdate("DELETE FROM s_channels WHERE name = ?", new String[] {chan});
   channels.remove(chan.toLowerCase());
 	}
 
