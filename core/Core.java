@@ -861,7 +861,7 @@ public class Core
      public void cmd_dis(String user, String why)
 	{
 		ircsend(numeric + " D " + user + " : ("  + why + ")");
-		dbc.delUser(user);
+		//dbc.delUser(user);
 	}
 
     /**
@@ -872,7 +872,7 @@ public class Core
      public void cmd_dis(String numeric, String user, String why)
 	{
 		ircsend(numeric + " D " + user + " : ("  + why + ")");
-		dbc.delUser(user);
+		//dbc.delUser(user);
 	}
 
     /**
